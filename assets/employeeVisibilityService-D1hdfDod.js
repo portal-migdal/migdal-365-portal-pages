@@ -1,0 +1,1 @@
+function e(e,t){return t||!e}function t(e,t){return e.replace(/\d+(?=\s*עובדים באלפון)/,String(t))}export{e as n,t};
