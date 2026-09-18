@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="פורטל העובדים של עיריית מגדל העמק — סביבת העבודה הדיגיטלית שלך" />
+    <meta name="theme-color" content="#2A9090" />
+    <!--
+      Light/Dark Mode: מריץ לפני כל CSS/JS אחר כדי לקבוע את data-theme על
+      <html> לפני הצביעה הראשונה (מונע Flash of Wrong Theme). מקור אמת יחיד
+      לבחירה: migdal365-theme ב-localStorage; בהיעדר בחירה שמורה — העדפת
+      מערכת ההפעלה (prefers-color-scheme). מסונכרן עם ThemeProvider
+      (src/shared/theme/ThemeProvider.tsx) שמחזיק באותו מפתח/לוגיקה בדיוק.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('migdal365-theme');
+          var theme = stored === 'light' || stored === 'dark'
+            ? stored
+            : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+    <!-- PWA: אייקוני האפליקציה נגזרו מהלוגו העירוני הקיים (public/logo.svg) -->
+    <link rel="icon" href="/migdal-365-portal-pages/icon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/migdal-365-portal-pages/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Migdal 365" />
+    <title>Migdal 365 — פורטל עובדים עיריית מגדל העמק</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/migdal-365-portal-pages/assets/index-2ZFWNXH-.js"></script>
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/rolldown-runtime-DAXXjFlN.js">
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/ui-C52PLPpy.js">
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/ThemeToggle-YhmHzTag.js">
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/logger-jPh80Hxq.js">
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/preload-helper-D-S8J-u5.js">
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/storageService-DMboke2W.js">
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/browser-BHzary-x.js">
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/authService-BnJZzmPF.js">
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/taskService-DFUJCvOQ.js">
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/graphService-EnTBtxtB.js">
+    <link rel="modulepreload" crossorigin href="/migdal-365-portal-pages/assets/sharepointService-BTzTb9b6.js">
+    <link rel="stylesheet" crossorigin href="/migdal-365-portal-pages/assets/index-C-6B2KJu.css">
+  <link rel="manifest" href="/migdal-365-portal-pages/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
