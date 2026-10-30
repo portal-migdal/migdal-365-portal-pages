@@ -1,0 +1,1 @@
+var e=`migdal365.orgDirectory.v1`,t=`org-directory.json`,n=[`employeeId`,`displayName`,`title`,`organizationalEmail`,`officePhone`,`officeLocation`,`normalizedUnitId`,`legacyDeptId`,`hasMicrosoftAccount`,`managerId`,`unitId`,`directReportCount`];export{t as ORG_DIRECTORY_SNAPSHOT_FILE,e as ORG_DIRECTORY_SNAPSHOT_FORMAT,n as SNAPSHOT_EMPLOYEE_FIELDS};
