@@ -1,0 +1,1 @@
+var e=[],t=200;function n(n,r,i){let a={level:n,message:r,data:i,timestamp:new Date().toISOString()};e.push(a),e.length>t&&e.shift()}var r={debug:(e,t)=>n(`debug`,e,t),info:(e,t)=>n(`info`,e,t),warn:(e,t)=>n(`warn`,e,t),error:(e,t)=>n(`error`,e,t),flush:()=>[...e]};export{r as t};

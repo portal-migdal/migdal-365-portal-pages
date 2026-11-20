@@ -1,0 +1,1 @@
+var e={endpoint:``.replace(/\/+$/,``),enabled:!1,hrContact:``,itContact:``};function t(){return e.enabled&&!!e.endpoint}export{e as n,t};
